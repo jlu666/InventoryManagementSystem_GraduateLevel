@@ -1,0 +1,7 @@
+CREATE TABLE inventory_item(
+    id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    typeCode CHAR(3) NOT NULL,
+    upc VARCHAR(12) UNIQUE NOT NULL,
+    manufacturerId INTEGER NOT NULL,
+    price INTEGER NOT NULL
+);
